@@ -1,13 +1,13 @@
 /*
-¹éÁØ 3085¹ø
-	 »çÅÁ °ÔÀÓ
+ë°±ì¤€ 3085ë²ˆ
+	 ì‚¬íƒ• ê²Œì„
 
-Ç®ÀÌ:
-	¹®Á¦¸¦ µü ºÃÀ» ¶§ È¿À²ÀûÀÎ ¹æ¾Èµµ Àß º¸ÀÌÁö ¾Ê°í ±×³É ±¸Çö ¹®Á¦ °°¾Ò´Ù.
-	¸ğµç °æ¿ì¸¦ ±¸ÇØ¾ß ÇÒ °Í °°¾Æ¼­ ¸ğµç »óÈ²ÀÇ ½Ã¹Ä·¹ÀÌ¼ÇÀ» ±¸ÇöÇß´Ù.
-	´Ù¸¥ ¹æ¹ıÀ¸·Î´Â µüÈ÷ ¶°¿À¸£Áö ¾Ê¾Ò´Ù.
+í’€ì´:
+	ë¬¸ì œë¥¼ ë”± ë´¤ì„ ë•Œ íš¨ìœ¨ì ì¸ ë°©ì•ˆë„ ì˜ ë³´ì´ì§€ ì•Šê³  ê·¸ëƒ¥ êµ¬í˜„ ë¬¸ì œ ê°™ì•˜ë‹¤.
+	ëª¨ë“  ê²½ìš°ë¥¼ êµ¬í•´ì•¼ í•  ê²ƒ ê°™ì•„ì„œ ëª¨ë“  ìƒí™©ì˜ ì‹œë®¬ë ˆì´ì…˜ì„ êµ¬í˜„í–ˆë‹¤.
+	ë‹¤ë¥¸ ë°©ë²•ìœ¼ë¡œëŠ” ë”±íˆ ë– ì˜¤ë¥´ì§€ ì•Šì•˜ë‹¤.
 
-	¿Í´Ù´Ù ±¸ÇöÇß´õ´Ï ¸Â¾Ò´Ù.
+	ì™€ë‹¤ë‹¤ êµ¬í˜„í–ˆë”ë‹ˆ ë§ì•˜ë‹¤.
 */
 #include <iostream>
 using namespace std;
@@ -29,7 +29,7 @@ int GetMaxCandy()
 			int continuousCandyColumn = 1;
 		for (int j = 0; j < n - 1; j++)	
 		{
-			//Çà Áß¿¡¼­ °¡Àå ¸¹Àº Äµµğ
+			//í–‰ ì¤‘ì—ì„œ ê°€ì¥ ë§ì€ ìº”ë””
 			if (board[i][j] == board[i][j + 1])
 			{
 				continuousCandyRow++;
@@ -39,12 +39,12 @@ int GetMaxCandy()
 				tempMax = max(tempMax, continuousCandyRow);
 				continuousCandyRow = 1;
 			}
-			if (j + 1 == n - 1) //³¡¿¡ µµ´ŞÇÑ °æ¿ì
+			if (j + 1 == n - 1) //ëì— ë„ë‹¬í•œ ê²½ìš°
 			{
 				tempMax = max(tempMax, continuousCandyRow);
 			}
 
-			//¿­ Áß¿¡¼­ °¡Àå ¸¹Àº Äµµğ
+			//ì—´ ì¤‘ì—ì„œ ê°€ì¥ ë§ì€ ìº”ë””
 			if (board[j][i] == board[j + 1][i])
 			{
 				continuousCandyColumn++;
@@ -54,7 +54,7 @@ int GetMaxCandy()
 				tempMax = max(tempMax, continuousCandyColumn);
 				continuousCandyColumn = 1;
 			}
-			if (j + 1 == n - 1) //³¡¿¡ µµ´ŞÇÑ °æ¿ì
+			if (j + 1 == n - 1) //ëì— ë„ë‹¬í•œ ê²½ìš°
 			{
 				tempMax = max(tempMax, continuousCandyColumn);
 			}
@@ -66,7 +66,7 @@ int GetMaxCandy()
 
 int main()
 {
-	//ÀÔ·Â ¹ŞÀº º¸µå ¼¼ÆÃ
+	//ì…ë ¥ ë°›ì€ ë³´ë“œ ì„¸íŒ…
 	cin >> n;
 
 	for (int i = 0; i < n; i++)
@@ -74,7 +74,7 @@ int main()
 		cin >> board[i];
 	}
 
-	//½Ã¹Ä·¹ÀÌ¼Ç
+	//ì‹œë®¬ë ˆì´ì…˜
 	for (int i = 0; i < n; i++)
 	{
 		for (int j = 0; j < n; j++)
@@ -84,21 +84,21 @@ int main()
 				int curx = j + dx[d];
 				int cury = i + dy[d];
 
-				//¿¹¿Ü Ã³¸®
+				//ì˜ˆì™¸ ì²˜ë¦¬
 				if (curx < 0 || cury < 0 || curx >= 50 || cury >= 50) 
 					continue;
 				if (board[i][j] == board[cury][curx])
 					continue;
 
-				//½º¿Ò
+				//ìŠ¤ì™‘
 				int temp = board[i][j];
 				board[i][j] = board[cury][curx];
 				board[cury][curx] = temp;
 
-				//ÇöÀç »óÅÂ¿¡¼­ ÃÖ´ë Äµµğ ¼ö ±¸ÇÏ±â
+				//í˜„ì¬ ìƒíƒœì—ì„œ ìµœëŒ€ ìº”ë”” ìˆ˜ êµ¬í•˜ê¸°
 				maxCandy = max(maxCandy, GetMaxCandy());
 
-				//º¹±¸
+				//ë³µêµ¬
 				temp = board[i][j];
 				board[i][j] = board[cury][curx];
 				board[cury][curx] = temp;
