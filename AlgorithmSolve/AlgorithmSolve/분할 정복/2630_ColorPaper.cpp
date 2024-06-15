@@ -1,13 +1,13 @@
 /*
-¹éÁØ 2630¹ø
-	»öÁ¾ÀÌ ¸¸µé±â
+ë°±ì¤€ 2630ë²ˆ
+	ìƒ‰ì¢…ì´ ë§Œë“¤ê¸°
 
-Ç®ÀÌ:
-	¹®Á¦¸¦ º¸´Ï °°Àº ²ÃÀÌ ¹Ýº¹µÇ´Â ÇüÅÂ¶ó Àç±Í·Î Ç®¾î¾ß°Ú´Ù´Â »ý°¢ÀÌ µé¾ú´Ù.
-	¾öÃ»³­ ¾ÆÀÌµð¾î ¾øÀÌ ¹®Á¦ÀÇ ³»¿ëÀ» Ãæ½ÇÈ÷ ±¸ÇöÇØ¼­ Ç®¾ú´Ù.
+í’€ì´:
+	ë¬¸ì œë¥¼ ë³´ë‹ˆ ê°™ì€ ê¼´ì´ ë°˜ë³µë˜ëŠ” í˜•íƒœë¼ ìž¬ê·€ë¡œ í’€ì–´ì•¼ê² ë‹¤ëŠ” ìƒê°ì´ ë“¤ì—ˆë‹¤.
+	ì—„ì²­ë‚œ ì•„ì´ë””ì–´ ì—†ì´ ë¬¸ì œì˜ ë‚´ìš©ì„ ì¶©ì‹¤ížˆ êµ¬í˜„í•´ì„œ í’€ì—ˆë‹¤.
 
-	Ç®°í ³ª¼­ ¾Ë¾Ò´Âµ¥ »ç½Ç 7´Þ Àü¿¡ Ç®¾ú´ø ¹®Á¦¿´´Ù.
-	7´Þ Àü ÄÚµå°¡ ´õ ±ò²ûÇÑ µí ÇØ¼­ °ú°ÅÀÇ ³ª¿¡°Ô Áø ±âºÐÀÌ¾ú´Ù.
+	í’€ê³  ë‚˜ì„œ ì•Œì•˜ëŠ”ë° ì‚¬ì‹¤ 7ë‹¬ ì „ì— í’€ì—ˆë˜ ë¬¸ì œì˜€ë‹¤.
+	7ë‹¬ ì „ ì½”ë“œê°€ ë” ê¹”ë”í•œ ë“¯ í•´ì„œ ê³¼ê±°ì˜ ë‚˜ì—ê²Œ ì§„ ê¸°ë¶„ì´ì—ˆë‹¤.
 */
 
 #include <iostream>
@@ -19,7 +19,7 @@ int countOfWhite = 0;
 
 bool divisionCheck(int startX, int startY, int N)
 {
-	//ºÐÇÒ ÇØ¾ß ÇÒÁö ¾Æ´ÒÁö ÆÇ´Ü
+	//ë¶„í•  í•´ì•¼ í• ì§€ ì•„ë‹ì§€ íŒë‹¨
 	for (int i = startY; i < startY + N; i++)
 	{
 		for (int j = startX; j < startX + N; j++)
@@ -35,7 +35,7 @@ bool divisionCheck(int startX, int startY, int N)
 
 void division(int startX, int startY, int N)
 {
-	//ÇÏÁö ¾Ê¾Æµµ µÇ¸é ÆÄ¶û Á¾ÀÌÀÎÁö ÇÏ¾á Á¾ÀÌÀÎÁö ÆÇ´Ü ÈÄ Àç±Í Å»Ãâ
+	//í•˜ì§€ ì•Šì•„ë„ ë˜ë©´ íŒŒëž‘ ì¢…ì´ì¸ì§€ í•˜ì–€ ì¢…ì´ì¸ì§€ íŒë‹¨ í›„ ìž¬ê·€ íƒˆì¶œ
 	if (!divisionCheck(startX, startY, N))
 	{
 		if (paper[startY][startX] == 1)
@@ -45,11 +45,11 @@ void division(int startX, int startY, int N)
 		return;
 	}
 
-	//ÇØ¾ß ÇÏ¸é Àç±Í È£Ãâ
-	division(startX, startY, N / 2);				//1»çºÐ¸é
-	division(startX + N / 2, startY, N / 2);		//2»çºÐ¸é
-	division(startX + N / 2, startY + N / 2, N / 2);//3»çºÐ¸é
-	division(startX, startY + N / 2, N / 2);		//4»çºÐ¸é
+	//í•´ì•¼ í•˜ë©´ ìž¬ê·€ í˜¸ì¶œ
+	division(startX, startY, N / 2);				//1ì‚¬ë¶„ë©´
+	division(startX + N / 2, startY, N / 2);		//2ì‚¬ë¶„ë©´
+	division(startX + N / 2, startY + N / 2, N / 2);//3ì‚¬ë¶„ë©´
+	division(startX, startY + N / 2, N / 2);		//4ì‚¬ë¶„ë©´
 }
 
 int main()
@@ -59,7 +59,7 @@ int main()
 	cout.tie(0);
 
 	cin >> n;
-	//ÀÔ·Â °ª ¼¼ÆÃ
+	//ìž…ë ¥ ê°’ ì„¸íŒ…
 	for (int i = 0; i < n; i++)
 	{
 		for (int j = 0; j < n; j++)
