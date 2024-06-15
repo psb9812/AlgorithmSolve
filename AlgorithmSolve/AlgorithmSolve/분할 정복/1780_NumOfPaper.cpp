@@ -1,15 +1,15 @@
 /*
-¹éÁØ 1780¹ø
-	Á¾ÀÌÀÇ °³¼ö
+ë°±ì¤€ 1780ë²ˆ
+	ì¢…ì´ì˜ ê°œìˆ˜
 
-Ç®ÀÌ:
-	ÀÌ¹ø ¹®Á¦µµ ¿ª½Ã ¾Õ¿¡ ¹®Á¦¿Í ´ëµ¿¼ÒÀÌÇÏ´Ù.
-	¹Ù²ï ºÎºÐÀº 3ºÐÀÇ 1¾¿ Àß¶óÁà¾ß ÇÑ´Ù´Â Á¡.
-	±× ºÎºÐ¸¸ Àß ¹Ù²Ù¸é µÈ´Ù.
+í’€ì´:
+	ì´ë²ˆ ë¬¸ì œë„ ì—­ì‹œ ì•žì— ë¬¸ì œì™€ ëŒ€ë™ì†Œì´í•˜ë‹¤.
+	ë°”ë€ ë¶€ë¶„ì€ 3ë¶„ì˜ 1ì”© ìž˜ë¼ì¤˜ì•¼ í•œë‹¤ëŠ” ì .
+	ê·¸ ë¶€ë¶„ë§Œ ìž˜ ë°”ê¾¸ë©´ ëœë‹¤.
 
-	½Ç¼öÇÑ Á¡Àº ÂÉ°¶ ¶§ ÀÎµ¦½º °è»êÀ» Àß¸øÇß´Ù.
-	´Ã ÀÎµ¦½º, °æ°è¿¡¼­ ´ëÃæ ÀÌ°Å°ÚÁöÇÏ´Ù°¡ ¹®Á¦°¡ ¹ß»ýÇÑ´Ù.
-	ÀÌ ºÎºÐÀ» ±ÍÂú¾Æµµ ²Ä²ÄÇÏ°Ô È®ÀÎÇÏ´Â ½À°üÀ» °¡Á®¾ß°Ú´Ù°í ´À²¼´Ù.
+	ì‹¤ìˆ˜í•œ ì ì€ ìª¼ê°¤ ë•Œ ì¸ë±ìŠ¤ ê³„ì‚°ì„ ìž˜ëª»í–ˆë‹¤.
+	ëŠ˜ ì¸ë±ìŠ¤, ê²½ê³„ì—ì„œ ëŒ€ì¶© ì´ê±°ê² ì§€í•˜ë‹¤ê°€ ë¬¸ì œê°€ ë°œìƒí•œë‹¤.
+	ì´ ë¶€ë¶„ì„ ê·€ì°®ì•„ë„ ê¼¼ê¼¼í•˜ê²Œ í™•ì¸í•˜ëŠ” ìŠµê´€ì„ ê°€ì ¸ì•¼ê² ë‹¤ê³  ëŠê¼ˆë‹¤.
 */
 
 #include <iostream>
@@ -22,7 +22,7 @@ int countOfOne = 0;
 
 bool divisionCheck(int startX, int startY, int N)
 {
-	//ºÐÇÒ ÇØ¾ß ÇÒÁö ¾Æ´ÒÁö ÆÇ´Ü
+	//ë¶„í•  í•´ì•¼ í• ì§€ ì•„ë‹ì§€ íŒë‹¨
 	for (int i = startY; i < startY + N; i++)
 	{
 		for (int j = startX; j < startX + N; j++)
@@ -38,7 +38,7 @@ bool divisionCheck(int startX, int startY, int N)
 
 void division(int startX, int startY, int N)
 {
-	//ÇÏÁö ¾Ê¾Æµµ µÇ¸é ÆÄ¶û Á¾ÀÌÀÎÁö ÇÏ¾á Á¾ÀÌÀÎÁö ÆÇ´Ü ÈÄ Àç±Í Å»Ãâ
+	//í•˜ì§€ ì•Šì•„ë„ ë˜ë©´ íŒŒëž‘ ì¢…ì´ì¸ì§€ í•˜ì–€ ì¢…ì´ì¸ì§€ íŒë‹¨ í›„ ìž¬ê·€ íƒˆì¶œ
 	if (!divisionCheck(startX, startY, N))
 	{
 		if (paper[startY][startX] == -1)
@@ -50,7 +50,7 @@ void division(int startX, int startY, int N)
 		return;
 	}
 
-	//ÇØ¾ß ÇÏ¸é Àç±Í È£Ãâ
+	//í•´ì•¼ í•˜ë©´ ìž¬ê·€ í˜¸ì¶œ
 	for (int i = 0; i < 3; i++)
 	{
 		for (int j = 0; j < 3; j++)
@@ -67,7 +67,7 @@ int main()
 	cout.tie(0);
 
 	cin >> n;
-	//ÀÔ·Â °ª ¼¼ÆÃ
+	//ìž…ë ¥ ê°’ ì„¸íŒ…
 	for (int i = 0; i < n; i++)
 	{
 		for (int j = 0; j < n; j++)
