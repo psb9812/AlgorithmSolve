@@ -1,15 +1,15 @@
 /*
-¹éÁØ 2503¹ø
-	¼ýÀÚ ¾ß±¸
+ë°±ì¤€ 2503ë²ˆ
+	ìˆ«ìž ì•¼êµ¬
 
-Ç®ÀÌ:
-	È¥ÀÚ °í¹Î ¸¹ÀÌ ÇÏ´Ù°¡
-	³Ê¹« ¿À·¡ °É·Á¼­ ´äÀ» ºÃ´Ù.
+í’€ì´:
+	í˜¼ìž ê³ ë¯¼ ë§Žì´ í•˜ë‹¤ê°€
+	ë„ˆë¬´ ì˜¤ëž˜ ê±¸ë ¤ì„œ ë‹µì„ ë´¤ë‹¤.
 
-	¶°¿Ã¸®Áö ¸øÇÑ ¾ÆÀÌµð¾î´Â "¹®ÀÚ¿­·Î ¹Ù²ã¼­ ÆíÇÏ°Ô ÀÎµ¦½º·Î ÀÚ¸®¼ö¸¦ ±¸ÇÏ´Â °Í"°ú
-	"¼öÀÇ ¹üÀ§°¡ ÀÛÀ¸´Ï bool ¹è¿­·Î °¡´ÉÇÑ ¼ö ÂÓ »Ì¾Æ³õ°í Áö¿ö³ª°¡´Â ¹æ½Ä"ÀÌ¾ú´Ù.
+	ë– ì˜¬ë¦¬ì§€ ëª»í•œ ì•„ì´ë””ì–´ëŠ” "ë¬¸ìžì—´ë¡œ ë°”ê¿”ì„œ íŽ¸í•˜ê²Œ ì¸ë±ìŠ¤ë¡œ ìžë¦¬ìˆ˜ë¥¼ êµ¬í•˜ëŠ” ê²ƒ"ê³¼
+	"ìˆ˜ì˜ ë²”ìœ„ê°€ ìž‘ìœ¼ë‹ˆ bool ë°°ì—´ë¡œ ê°€ëŠ¥í•œ ìˆ˜ ì«™ ë½‘ì•„ë†“ê³  ì§€ì›Œë‚˜ê°€ëŠ” ë°©ì‹"ì´ì—ˆë‹¤.
 
-	¹è¿ï °É Àß Ã¬±æ ¼ö ÀÖ¾ú´ø ¹®Á¦¿´´Ù.
+	ë°°ìš¸ ê±¸ ìž˜ ì±™ê¸¸ ìˆ˜ ìžˆì—ˆë˜ ë¬¸ì œì˜€ë‹¤.
 */
 
 #include <iostream>
@@ -19,20 +19,20 @@
 using namespace std;
 int T;
 
-//°¡´ÉÇÑ ÃÖ´ë ¼ö´Â 987ÀÌ¹Ç·Î 987 + 1°³ÀÇ ¹è¿­À» ¸¸µç´Ù.
+//ê°€ëŠ¥í•œ ìµœëŒ€ ìˆ˜ëŠ” 987ì´ë¯€ë¡œ 987 + 1ê°œì˜ ë°°ì—´ì„ ë§Œë“ ë‹¤.
 bool possibleNums[988];
 
-//100ÀÇ ÀÚ¸® ¸®ÅÏÇÏ´Â ÇÔ¼ö
+//100ì˜ ìžë¦¬ ë¦¬í„´í•˜ëŠ” í•¨ìˆ˜
 int NumOf100(int num)
 {
 	return (num / 100);
 }
-//10ÀÇ ÀÚ¸® ¸®ÅÏÇÏ´Â ÇÔ¼ö
+//10ì˜ ìžë¦¬ ë¦¬í„´í•˜ëŠ” í•¨ìˆ˜
 int NumOf10(int num)
 {
 	return (num % 100) / 10;
 }
-//1ÀÇ ÀÚ¸® ¸®ÅÏÇÏ´Â ÇÔ¼ö
+//1ì˜ ìžë¦¬ ë¦¬í„´í•˜ëŠ” í•¨ìˆ˜
 int NumOf1(int num)
 {
 	return num % 10;
@@ -57,22 +57,22 @@ int main()
 	cin.tie(0);
 	cout.tie(0);
 
-	//±âº»ÀûÀ¸·Î true·Î ÃÊ±âÈ­
+	//ê¸°ë³¸ì ìœ¼ë¡œ trueë¡œ ì´ˆê¸°í™”
 	memset(possibleNums, true, sizeof(possibleNums));
 
 	cin >> T;
 
 
-	//0ÀÌ µé¾î°¡°Å³ª Áßº¹¼ö°¡ µé¾î°£ ÀÎµ¦½º¸¦ false·Î ÇÑ´Ù.
+	//0ì´ ë“¤ì–´ê°€ê±°ë‚˜ ì¤‘ë³µìˆ˜ê°€ ë“¤ì–´ê°„ ì¸ë±ìŠ¤ë¥¼ falseë¡œ í•œë‹¤.
 	for (int i = 123; i < 988; i++)
 	{
-		//0ÀÌ µé¾î°¡ÀÖ´Â °æ¿ì
+		//0ì´ ë“¤ì–´ê°€ìžˆëŠ” ê²½ìš°
 		if (IsContainNum(i, 0))
 		{
 			possibleNums[i] = false;
 			continue;
 		}
-		//Áßº¹¼ö°¡ µé¾î°¡ ÀÖ´Â °æ¿ì.
+		//ì¤‘ë³µìˆ˜ê°€ ë“¤ì–´ê°€ ìžˆëŠ” ê²½ìš°.
 		if (NumOf1(i) == NumOf10(i) || NumOf1(i) == NumOf100(i) || NumOf10(i) == NumOf100(i))
 			possibleNums[i] = false;
 	}
