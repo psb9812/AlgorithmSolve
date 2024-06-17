@@ -1,25 +1,25 @@
 /*
-¹éÁØ 10830¹ø
+ë°±ì¤€ 10830ë²ˆ
 
 
-Ç®ÀÌ:
-	Çà·Ä¿¡ °üÇÑ Áö½ÄÀÌ Àü¹«Çß´ø ³ª...
-	Áö¼ö¹ýÄ¢ÀÌ Çà·Ä¿¡µµ Àû¿ëµÊÀ» È¥ÀÚ Ãß·ÐÇÏ°í.. »ðÁúÇÏ°í ÀÖ¾ú´Ù...
-	ÀÏ´Ü Áö¼ö°¡ ³Ê¹« Å©´Ï±î ¼öÇà È½¼ö¸¦ ÁÙÀÏ ¹æ¹ýÀÌ ÇÊ¿äÇß´Ù.
+í’€ì´:
+	í–‰ë ¬ì— ê´€í•œ ì§€ì‹ì´ ì „ë¬´í–ˆë˜ ë‚˜...
+	ì§€ìˆ˜ë²•ì¹™ì´ í–‰ë ¬ì—ë„ ì ìš©ë¨ì„ í˜¼ìž ì¶”ë¡ í•˜ê³ .. ì‚½ì§ˆí•˜ê³  ìžˆì—ˆë‹¤...
+	ì¼ë‹¨ ì§€ìˆ˜ê°€ ë„ˆë¬´ í¬ë‹ˆê¹Œ ìˆ˜í–‰ íšŸìˆ˜ë¥¼ ì¤„ì¼ ë°©ë²•ì´ í•„ìš”í–ˆë‹¤.
 
-	Áö¼ö¹ýÄ¢ÀÌ Àû¿ëµÇ¹Ç·Î ºÐÇÒÇØ¼­ °è»êÀ» ÇØÁÖ¾ú´Ù.
+	ì§€ìˆ˜ë²•ì¹™ì´ ì ìš©ë˜ë¯€ë¡œ ë¶„í• í•´ì„œ ê³„ì‚°ì„ í•´ì£¼ì—ˆë‹¤.
 
-	±×·¡¼­ ¾óÃß ³í¸®°¡ ¸Â°Ô Àß Â¥¼­ Á¦ÃâÇß´Âµ¥ °è¼Ó Æ²¸®°Ô ³ª¿Ô´Ù...
-	ÇÑÂüÀ» µÚÁ®º» °á°ú.. ´Ù¸¥ ºÎºÐÀº ¼ö°¡ Å©¹Ç·Î ÀÚ·áÇüÀ» ulonglongÀ¸·Î Çß´Âµ¥...
-	Áö¼ö¸¦ ¹Þ´Â exponents ¸Å°³º¯¼ö¸¦ int·Î ÇØ³ö¼­ ±×·¨´ø °Å¿´´Ù...................................
+	ê·¸ëž˜ì„œ ì–¼ì¶” ë…¼ë¦¬ê°€ ë§žê²Œ ìž˜ ì§œì„œ ì œì¶œí–ˆëŠ”ë° ê³„ì† í‹€ë¦¬ê²Œ ë‚˜ì™”ë‹¤...
+	í•œì°¸ì„ ë’¤ì ¸ë³¸ ê²°ê³¼.. ë‹¤ë¥¸ ë¶€ë¶„ì€ ìˆ˜ê°€ í¬ë¯€ë¡œ ìžë£Œí˜•ì„ ulonglongìœ¼ë¡œ í–ˆëŠ”ë°...
+	ì§€ìˆ˜ë¥¼ ë°›ëŠ” exponents ë§¤ê°œë³€ìˆ˜ë¥¼ intë¡œ í•´ë†”ì„œ ê·¸ëž¬ë˜ ê±°ì˜€ë‹¤...................................
 
-	ÀÚ±«°¨ÀÌ µé¾ú´ø ¹®Á¦...
+	ìžê´´ê°ì´ ë“¤ì—ˆë˜ ë¬¸ì œ...
 
-	¾Æ¹«Æ° ´Ù Ç®°í³ª¼­ ´Ù¸¥ »ç¶÷µéÀÇ Ç®ÀÌ¸¦ º¸´Ï ´Ùµé ³Ê¹« ±ò²ûÇÏ°Ô Çª½Å´Ù... °í¼öºÐµé...
-	Çà·Ä³¢¸®ÀÇ °öÀº ±×³É 3Áß for¹®À¸·Î ¸¹ÀÌ ±¸ÇöÇÏ¼Ì´Âµ¥ ³»°¡ ÇÑ Àç±Íº¸´Ù ÈÎ¾À ±ò²ûÇÏ°í ¼º´Éµµ ÁÁ¾Æº¸¿´´Ù.
+	ì•„ë¬´íŠ¼ ë‹¤ í’€ê³ ë‚˜ì„œ ë‹¤ë¥¸ ì‚¬ëžŒë“¤ì˜ í’€ì´ë¥¼ ë³´ë‹ˆ ë‹¤ë“¤ ë„ˆë¬´ ê¹”ë”í•˜ê²Œ í‘¸ì‹ ë‹¤... ê³ ìˆ˜ë¶„ë“¤...
+	í–‰ë ¬ë¼ë¦¬ì˜ ê³±ì€ ê·¸ëƒ¥ 3ì¤‘ forë¬¸ìœ¼ë¡œ ë§Žì´ êµ¬í˜„í•˜ì…¨ëŠ”ë° ë‚´ê°€ í•œ ìž¬ê·€ë³´ë‹¤ í›¨ì”¬ ê¹”ë”í•˜ê³  ì„±ëŠ¥ë„ ì¢‹ì•„ë³´ì˜€ë‹¤.
 
-	¾Æ¹«Æ° Å« ¼ö°¡ ³ª¿À´Â ¹®Á¦´Â ¸ðµç º¯¼öµéÀÇ Å¸ÀÔÀ» Á¶½ÉÇØ¾ß°Ú°í.(¸Å°³º¯¼ö Á¶½É)
-	¼öÇà È½¼ö¸¦ ÁÙÀÏ ¶§ ºÐÇÒ Á¤º¹À» È°¿ëÇÒ ¼ö ÀÖÀ½À» ´Ù½Ã ÇÑ ¹ø ´À³¤´Ù.
+	ì•„ë¬´íŠ¼ í° ìˆ˜ê°€ ë‚˜ì˜¤ëŠ” ë¬¸ì œëŠ” ëª¨ë“  ë³€ìˆ˜ë“¤ì˜ íƒ€ìž…ì„ ì¡°ì‹¬í•´ì•¼ê² ê³ .(ë§¤ê°œë³€ìˆ˜ ì¡°ì‹¬)
+	ìˆ˜í–‰ íšŸìˆ˜ë¥¼ ì¤„ì¼ ë•Œ ë¶„í•  ì •ë³µì„ í™œìš©í•  ìˆ˜ ìžˆìŒì„ ë‹¤ì‹œ í•œ ë²ˆ ëŠë‚€ë‹¤.
 */
 
 #include <iostream>
@@ -66,11 +66,11 @@ Matrix matrixSquare(Matrix& matrix, unsigned long long exponents)
 		Matrix squareMatrix(matrixSquare(matrix, exponents / 2));
 		Matrix left(5, std::vector<unsigned long long>(5));
 		matrixMul(left, squareMatrix, squareMatrix, 0, 0);
-		//È¦¼öÀÎ °æ¿ìÀÌ¹Ç·Î ÇÑ ¹ø ´õ °öÇØÁØ´Ù.
+		//í™€ìˆ˜ì¸ ê²½ìš°ì´ë¯€ë¡œ í•œ ë²ˆ ë” ê³±í•´ì¤€ë‹¤.
 		matrixMul(result, left, matrix, 0, 0);
 	}
 
-	//³ª¸ÓÁö ¿¬»ê Ã³¸®
+	//ë‚˜ë¨¸ì§€ ì—°ì‚° ì²˜ë¦¬
 	for (int k = 0; k < N; k++)
 	{
 		for (int q = 0; q < N; q++)
@@ -90,7 +90,7 @@ int main()
 
 	Matrix inputMatrix(5, std::vector<unsigned long long>(5));
 
-	//ÀÔ·Â °ª ¼¼ÆÃ
+	//ìž…ë ¥ ê°’ ì„¸íŒ…
 	cin >> N >> B;
 
 	for (int i = 0; i < N; i++)
@@ -105,7 +105,7 @@ int main()
 	answer = matrixSquare(inputMatrix, B);
 
 
-	//³ª¸ÓÁö ¿¬»ê Ã³¸®
+	//ë‚˜ë¨¸ì§€ ì—°ì‚° ì²˜ë¦¬
 	for (int k = 0; k < N; k++)
 	{
 		for (int q = 0; q < N; q++)
@@ -114,7 +114,7 @@ int main()
 		}
 	}
 
-	//Á¤´ä Ãâ·Â
+	//ì •ë‹µ ì¶œë ¥
 	for (int k = 0; k < N; k++)
 	{
 		for (int q = 0; q < N; q++)
